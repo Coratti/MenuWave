@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: lightgrey;
+
+    height: 14vh;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+img{
+    width: 27%;
+    height: auto;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+nav ul li{
+    background-color: aqua;
+
+    list-style: none;
+    padding: 5px;
+
+    font-size: 1.9rem;
+    font-family: sans-serif;
+}
