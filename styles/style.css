@@ -1,0 +1,96 @@
+@charset "UTF-8";
+:root{
+    --corpadrao: #FFFAFF;
+    --textosprincipais: #004777;
+    --CTA: #30BCED;
+}
+html{
+    font-size: 62.5%;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---------------BARRA DE NAVEGAÇÃO-------------*/
+header{
+    background-image: linear-gradient(to right, #30BCED 50%, #015c99d8);
+
+    height: 14vh;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.281);
+}
+
+img{
+    margin-left: 10px;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+nav{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    font-size: 2rem;
+    color: var(--corpadrao);
+    font-family: sans-serif;
+
+    list-style: none;
+    padding: 5px;
+
+}
+
+/*MENU HAMBURGUER*/
+
+#menu{
+    align-self: center;
+    margin-right: 10px;
+    font-size: 4.0rem;
+    font-weight: bolder;
+    color: var(--corpadrao);
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+/*-------------CORPO----------------*/
+main{
+    background-color: var(--corpadrao);
+    height: 100vh;
+    width: 100vw;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 5px;
+}
+
+h1{
+    font-size: 4.0rem;
+    padding: 10px;
+    color: var(--textosprincipais);
+}
+
+#palavra-destaque{
+    color: var(--CTA);
+    border-left: 9px solid var(--CTA);
+    padding-left: 5px;
+}
