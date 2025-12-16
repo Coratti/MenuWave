@@ -85,7 +85,7 @@ main{
     align-items: center;
     height: 30%;
     margin-top: 5px;
-    margin: auto;
+    width: 100%;
 }
 
 #hero h1{
