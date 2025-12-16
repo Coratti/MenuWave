@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --corpadrao: #FFFAFF;
     --textosprincipais: #004777;
@@ -108,12 +109,18 @@ main{
 
     align-items: center;
     justify-content: center;
+
+    font-family: "Montserrat", sans-serif;
 }
 
-#cardapios h2{
+.subtitulo{
     text-align: center;
     padding: 10px;
     font-size: 3.0rem;
+    font-weight: normal;
+    color: var(--textosprincipais);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.315);
+    font-family: "Montserrat", sans-serif;
 }
 
 .tabela-plano{
@@ -124,10 +131,40 @@ main{
 
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .tabela-plano h3{
     text-align: center;
     font-size: 2.0rem;
+    font-weight: normal;
+}
+
+/*PRODUTOS  > links*/
+.opcao{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+
+    border:none;
+    border-radius: 7px;
+
+    width: 50%;
+
+    background-image: radial-gradient(circle, var(--CTA) 1%, var(--corpadrao) 100%);
+    color: var(--corpadrao);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width:300px) and (max-width:350px) {
+    #hero h1{
+        font-size: 3.5rem;
+    }
 }
