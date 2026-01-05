@@ -85,8 +85,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
+    height: auto;
     margin-top: 5px;
+
+    border: 1px dotted black;
 }
 
 #hero h1{
@@ -94,6 +96,8 @@ main{
     padding: 10px;
     color: var(--textosprincipais);
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.438);
+
+    border: 1px dotted black;
 }
 
 #palavra-destaque{
