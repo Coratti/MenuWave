@@ -90,8 +90,6 @@ section{
     align-items: center;
     height: auto;
     margin-top: 5px;
-
-    border: 1px dotted black;
 }
 
 #hero h1{
@@ -100,7 +98,6 @@ section{
     color: var(--textosprincipais);
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.438);
 
-    border: 1px dotted black;
 }
 
 #palavra-destaque{
