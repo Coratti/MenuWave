@@ -79,6 +79,9 @@ main{
     width: 100%;
 }
 
+section{
+    margin: 35px 0px 10px 0px;
+}
 /*HERO*/
 
 #hero{
