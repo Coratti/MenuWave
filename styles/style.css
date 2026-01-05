@@ -25,7 +25,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
 
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.281);
 
@@ -36,7 +36,7 @@ img{
     height: auto;
 }
 
-/*BARRA DE NAVEGAÇÃO*/
+/*BARRA DE NAVEGAÇÃO
 
 nav{
     display: none;
@@ -55,8 +55,9 @@ nav ul li{
     padding: 5px;
 
 }
+*/
 
-/*MENU HAMBURGUER*/
+/*MENU HAMBURGUER
 
 #menu{
     align-self: center;
@@ -69,6 +70,7 @@ nav ul li{
 #menu:hover{
     cursor: pointer;
 }
+*/
 
 /*-------------CORPO----------------*/
 main{
@@ -85,7 +87,6 @@ main{
     align-items: center;
     height: 30%;
     margin-top: 5px;
-    width: 100%;
 }
 
 #hero h1{
@@ -160,7 +161,21 @@ main{
     background-image: radial-gradient(circle, var(--CTA) 1%, var(--corpadrao) 100%);
     color: var(--corpadrao);
 }
+/*VANTAGENS*/
 
+#vantagens h3{
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 10px;
+    color: var(--CTA);
+    border-left: 9px solid var(--CTA);
+}
+
+#vantagens p{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 10px;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (min-width:300px) and (max-width:350px) {
