@@ -60,3 +60,11 @@ td {
 tr:hover {
     background-color: #f0f0f0;
 }
+
+footer{
+    text-align: center;
+    padding:10px;
+    background-color: var(--textosprincipais);
+    color: var(--corpadrao);
+    width: 100%;
+}
