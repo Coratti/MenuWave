@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar do Espeto | Menu Digital</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles/model.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-label="Apresentacao do bar">
+        <div class="hero-media"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Menu digital</p>
+          <h1>Bar do Espeto</h1>
+          <p>Espetos na brasa, porcoes caprichadas, jantinha completa, bebidas geladas e drinks para fechar a noite.</p>
+        </div>
+      </section>
+
+      <section class="menu-panel" aria-label="Cardapio">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow">Escolha uma categoria</p>
+            <h2>Cardapio</h2>
+          </div>
+          <span id="itemCount" class="item-count"></span>
+        </div>
+
+        <nav class="category-tabs" id="categoryTabs" aria-label="Categorias do cardapio"></nav>
+
+        <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
