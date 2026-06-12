@@ -61,15 +61,10 @@ a {
 }
 
 .brand-symbol {
-  width: 46px;
-  height: 46px;
+  width: 70px;
+  height: 60px;
   border-radius: 14px;
   display: grid;
-  place-items: center;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  font-size: 0.9rem;
-  letter-spacing: 0;
 }
 
 .nav-button,
