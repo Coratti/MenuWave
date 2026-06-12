@@ -8,6 +8,30 @@
 
 const menuData = [
   {
+    id: "destaques",
+    nome: "Destaques",
+    itens: [
+      {
+        nome: "Cane de panela",
+        resumo: "Carne bovina temperada na brasa.",
+        descricao: "Cortes selecionados de carne bovina, temperados com sal grosso e finalizados na brasa.",
+        preco: "R$ 17,00"
+      },
+      {
+        nome: "Espeto de frango",
+        resumo: "Frango suculento com tempero da casa.",
+        descricao: "Cubos de frango marinados com ervas, alho e toque de limao, assados ate ficarem dourados.",
+        preco: "R$ 10,00"
+      },
+      {
+        nome: "Cerveja Heineken",
+        resumo: "600ml",
+        descricao: "Gelada para os dias quentes",
+        preco: "R$ 10,00"
+      }
+    ]
+  },
+  {
     id: "espetos",
     nome: "Espetos",
     itens: [
@@ -152,3 +176,20 @@ function renderMenu() {
 }
 
 renderMenu();
+
+// Script para Aberto/Fechado
+
+const horaAtual = new Date().getHours();
+const status = document.getElementById('status');
+const statusText = document.getElementById('status-text');
+const dot = document.getElementById('dot');
+
+if (horaAtual >= 18 && horaAtual <= 23) {
+  statusText.textContent = 'Aberto agora';
+  status.classList.add('status-pill');
+  dot.classList.add('status-pill-span-dot-aberto');
+} else {
+  statusText.textContent = 'Fechado';
+  status.classList.add('status-pill-fechado');
+  dot.classList.add('status-pill-span-dot-fechado');
+}
