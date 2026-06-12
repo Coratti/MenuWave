@@ -15,6 +15,7 @@ whatsappButton.addEventListener("click", function (event) {
   window.open(createWhatsappLink(message), "_blank");
 });
 
+/*
 planButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     const selectedPlan = button.dataset.plan;
@@ -23,3 +24,4 @@ planButtons.forEach(function (button) {
     window.open(createWhatsappLink(message), "_blank");
   });
 });
+*/
