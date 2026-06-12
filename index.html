@@ -1,78 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=menu" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenuWave - Cardápio Digital</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-    <header>
-        <img src="images/Logo.webp" alt="Logo MW com o nome MenuWave">
-        <!-- MENU HAMBURGUER
-        <span class="material-symbols-outlined" id="menu">
-            menu
-        </span>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="brand-symbol">MW</div>
+        <span>MenuWave</span>
+      </div>
 
-        <nav>
-            <ul>
-                <li>Produtos</li>
-                <li>Vantagens</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-        -->
-    </header>
+      <a href="#planos" class="nav-button">Ver planos</a>
+    </nav>
 
-    <main>
-        <section id="hero">
-            <h1>
-                Seu cliente vê mais <br>Decide mais rápido <br><span id="palavra-destaque">Compra mais</span>
-            </h1>
-        </section>
+    <section class="hero-content">
+      <p class="eyebrow">Cardápio digital por QR Code</p>
 
-        <section id="vantagens">
-            <h2 class="subtitulo">
-                VANTAGENS
-            </h2>
+      <h1>
+        Seu cliente vê mais,<br />
+        decide mais rápido<br />
+        e compra mais.
+      </h1>
 
-            <h3>Atualização instantânea</h3>
-            <p>Mude preços, fotos ou produtos sem precisar reimprimir nada.</p>
+      <p class="hero-description">
+        Transforme seu cardápio em uma experiência moderna, organizada e fácil de acessar direto pelo celular.
+      </p>
 
-            <h3>Economia real</h3>
-            <p>Sem gastos com impressão, gráfica ou reimpressões por erro.</p>
+      <div class="hero-actions">
+        <a href="#planos" class="primary-button">Conhecer planos</a>
+        <a href="#vantagens" class="secondary-button">Ver vantagens</a>
+      </div>
+    </section>
+  </header>
 
-            <h3>Controle total do que você quer vender mais</h3>
-            <p>Destaque para combos, Produtos em evidência e Organização estratégica do cardápio (você direciona a venda)</p>
+  <main>
+    <section class="section" id="vantagens">
+      <div class="section-heading">
+        <span class="section-kicker">Vantagens</span>
+        <h2>Mais praticidade para vender melhor</h2>
+        <p>
+          Um cardápio digital deixa sua operação mais ágil, bonita e preparada para destacar os produtos certos.
+        </p>
+      </div>
 
-            <h3>Funciona direto no celular do cliente</h3>
-            <p>Tecnologia QR Code, não precisa baixar aplicativo e abre em segundos (experiência moderna e prática)</p>
-        </section>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <span class="benefit-icon">↻</span>
+          <h3>Atualização instantânea</h3>
+          <p>Mude preços, fotos, descrições e produtos sem reimprimir nada.</p>
+        </article>
 
-        <section id="cardapios">
-            <h2 class="subtitulo">PLANOS</h2>
-            <article class="tabela-plano">
-                <h3>Plano básico</h3>
-                <a href="#" class="opcao">Opção 1</a>
-                <a href="#" class="opcao">Opção 2</a>
-            </article>
+        <article class="benefit-card">
+          <span class="benefit-icon">QR</span>
+          <h3>Acesso por QR Code</h3>
+          <p>O cliente abre em segundos no celular, sem precisar baixar aplicativo.</p>
+        </article>
 
-            <article class="tabela-plano">
-                <h3>Plano intermediário</h3>
-                <a href="#" class="opcao">Opção 1</a>
-            </article>
+        <article class="benefit-card">
+          <span class="benefit-icon">★</span>
+          <h3>Destaque estratégico</h3>
+          <p>Valorize combos, produtos em evidência e itens com maior margem.</p>
+        </article>
 
-            <article class="tabela-plano">
-                <h3>Plano King</h3>
-                <a href="model.html" class="opcao">Personalizado</a>
-            </article>
-        </section>
+        <article class="benefit-card">
+          <span class="benefit-icon">R$</span>
+          <h3>Economia real</h3>
+          <p>Reduza gastos com impressão, gráfica e reimpressões por erro.</p>
+        </article>
+      </div>
+    </section>
 
-    </main>
+    <section class="section section-soft" id="planos">
+      <div class="section-heading">
+        <span class="section-kicker">Planos</span>
+        <h2>Escolha o modelo ideal para seu negócio</h2>
+      </div>
 
-    <footer>
+      <div class="plans-grid">
+        <article class="plan-card">
+          <div>
+            <span class="plan-label">Plano básico</span>
+            <h3>Essencial</h3>
+            <p>Ideal para começar com um cardápio digital bonito, rápido e funcional.</p>
+          </div>
 
-    </footer>
+          <ul>
+            <li>Cardápio online</li>
+            <li>Acesso por QR Code</li>
+            <li>Organização por categorias</li>
+          </ul>
+
+          <button class="plan-button" data-plan="Plano Básico - Opção 1">
+            Opção 1
+          </button>
+
+          <button class="plan-button ghost" data-plan="Plano Básico - Opção 2">
+            Opção 2
+          </button>
+        </article>
+
+        <article class="plan-card featured">
+          <div class="badge">Mais escolhido</div>
+
+          <div>
+            <span class="plan-label">Plano intermediário</span>
+            <h3>Profissional</h3>
+            <p>Para quem quer uma apresentação mais completa e maior controle visual.</p>
+          </div>
+
+          <ul>
+            <li>Destaques para produtos</li>
+            <li>Fotos e descrições otimizadas</li>
+            <li>Atualizações facilitadas</li>
+          </ul>
+
+          <button class="plan-button" data-plan="Plano Intermediário">
+            Opção 1
+          </button>
+        </article>
+
+        <article class="plan-card">
+          <div>
+            <span class="plan-label">Plano King</span>
+            <h3>Personalizado</h3>
+            <p>Uma solução sob medida para negócios que querem algo exclusivo.</p>
+          </div>
+
+          <ul>
+            <li>Layout personalizado</li>
+            <li>Estrutura sob demanda</li>
+            <li>Consultoria para organização</li>
+          </ul>
+
+          <a href="model.html">
+              <button class="plan-button" data-plan="Plano King Personalizado">
+                Personalizado
+              </button>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a
+    href="#"
+    class="whatsapp-float"
+    id="whatsappButton"
+    aria-label="Entrar em contato pelo WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16.04 3C9.44 3 4.08 8.28 4.08 14.78c0 2.33.7 4.5 1.9 6.33L4 29l8.1-2.1a12.2 12.2 0 0 0 3.94.65C22.64 27.55 28 22.27 28 15.77S22.64 3 16.04 3Zm0 22.42c-1.2 0-2.37-.28-3.43-.82l-.5-.25-4.8 1.25 1.28-4.6-.32-.52a9.7 9.7 0 0 1-1.52-5.2c0-5.32 4.38-9.65 9.77-9.65s9.77 4.33 9.77 9.65-4.38 9.64-10.25 9.64Zm5.56-7.22c-.3-.15-1.78-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.45-2.38-1.43-.88-.77-1.47-1.72-1.65-2.02-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.58-.92-2.17-.24-.57-.5-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.47s1.08 2.87 1.23 3.07c.15.2 2.12 3.18 5.14 4.45.72.3 1.28.47 1.72.6.72.22 1.38.18 1.9.1.58-.08 1.78-.72 2.03-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z" />
+    </svg>
+  </a>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
