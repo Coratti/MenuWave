@@ -231,24 +231,13 @@ h1 {
 }
 
 @media (max-width: 620px) {
-  .shell {
-    width: min(100% - 22px, 960px);
-    padding-top: 22px;
-  }
-
   .topbar {
     display: grid;
   }
 
-  .status-pill {
+  .status-pill,
+  .status-pill-fechado {
     width: fit-content;
-  }
-
-  .intro {
-    padding: 16px;
-  }
-
-  .menu-item-header {
-    grid-template-columns: 1fr;
+    justify-self: start;
   }
 }
