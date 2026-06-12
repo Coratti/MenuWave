@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Digital</title>
+  <link rel="stylesheet" href="styles/planopro.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Cardápio digital</p>
+        <h1>Espetaria da Casa</h1>
+      </div>
+      <div class="status-pill">
+        <span></span>
+        Aberto hoje
+      </div>
+    </header>
+
+    <section class="intro" aria-label="Resumo do cardápio">
+      <div>
+        <strong>Menu simples, moderno e sem imagens.</strong>
+        <p>Clique em qualquer item para ver a descrição. Categorias e produtos são editados somente no código.</p>
+      </div>
+    </section>
+
+    <nav class="category-tabs" id="categoryTabs" aria-label="Categorias do cardápio"></nav>
+
+    <section class="menu-list" id="menuList" aria-live="polite"></section>
+  </main>
+
+  <script src="scripts/planopro.js"></script>
+</body>
+</html>
